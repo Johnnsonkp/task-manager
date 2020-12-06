@@ -2,24 +2,57 @@ const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
+const panels = document.querySelectorAll('.panel')
 
-let currentActive = 1
+let currentActive = 0
+
+panels.forEach(panel => {
+    next.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add("active")
+    })
+})
+
+panels.forEach(panel => {
+    prev.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add("active")
+    })
+})
+
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove("active")
+    })
+}
+
+
 
 next.addEventListener('click', () => {
     currentActive++
+    // panels.forEach(panel => {
+    //     removeActiveClasses()
+    //     panel.classList.add("active")
+    // })
 
     if(currentActive > circles.length) {
         currentActive = circles.length
     }
+
 
     update()
 })
 
 prev.addEventListener('click', () => {
     currentActive--
+    // panels.forEach(panel => {
+    //     removeActiveClasses()
+    //     panel.classList.add("active")
+    // })
 
     if(currentActive < 1) {
-        currentActive = 1
+        currentActive = 0
     }
 
     update()

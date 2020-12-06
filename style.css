@@ -21,6 +21,7 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    color: black;
 }
 
 #main-header{
@@ -49,7 +50,7 @@ body{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 100px;
+    top: 70px;
     margin-bottom: 30px;
     max-width: 100%;
     width: 90vw;
@@ -96,13 +97,13 @@ body{
 }
 
 .btn{
-    background-color: var(--line-border-fill);
+    background-color: var(--line-border-empty);
     color: #fff;
     border: 0;
-    border-radius: 6px;
+    border-radius: 50%;
     cursor: pointer;
     font-family: inherit;
-    padding: 8px 30px;
+    padding: 25px;
     margin: 5px;
     font-size: 14px;
 }
@@ -119,15 +120,18 @@ body{
     background-color: var(--line-border-empty);
     cursor: not-allowed;
 }
-
+.btn:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+}
 #prev{
     position: relative;
-    top: -27%;
+    top: -30%;
     right: 35%;
 }
 #next{
     position: relative;
-    top: -27%;
+    top: -30%;
     left: 35%;
 }
 
@@ -147,7 +151,7 @@ body{
     background-repeat: no-repeat;
     height: 60vh;
     border-radius: 50px;
-    color: #fff;
+    color: black;
     cursor: pointer;
     flex: 0.5;
     margin: 10px;
@@ -200,7 +204,7 @@ textarea {
     box-shadow: 1px 1px 1px #999;
     color: black;
     position: absolute;
-    top: 13vh;
+    top: 8vh;
     left: 25%;
 }
 
