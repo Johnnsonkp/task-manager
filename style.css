@@ -21,6 +21,7 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    padding: 0;
     color: black;
 }
 
@@ -192,7 +193,7 @@ body{
 }
 label,
 textarea {
-    font-size: .8rem;
+    font-size: .9rem;
     letter-spacing: 1px;
     color: black;
 }
@@ -204,11 +205,12 @@ textarea {
     box-shadow: 1px 1px 1px #999;
     color: black;
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     left: 25%;
+    opacity: 0.8;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
