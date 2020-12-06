@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Task Manager</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-text">
+            <h3>Task Manager</h3>
+        </div>
+    </header>
+    <div class="container">
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+        </div>
+
+        <div class="panel-container">
+            <!-- <div class= "panel active" style="background-image: url('https://images.unsplash.com/photo-1527492662722-dbaf97270863?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+                <h3>Explore The World</h3>
+            </div> -->
+
+            <label for="story">Write task here:</label>
+            <textarea class="panel active" name="story" rows="30" cols="120">
+                Write text here
+            </textarea>
+    
+            <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1551983914-4ab58d6b1018?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1075&q=80')">
+                <h3>Beautiful Architecture</h3>
+            </div>
+    
+            <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1446822679794-fbd084d10491?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8dHJhdmVsJTIwZ2V0YXdheXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                <h3>Amazing Sunset</h3>
+            </div>
+    
+            <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1545324875-f4b91d62947c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80')">
+                <h3>City skyscrapper</h3>
+            </div>
+    
+            <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1534649909653-a1d8bac2511a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGdldGF3YXlzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                <h3>Sunflower Season</h3>
+            </div>
+    
+    
+    
+        </div>
+
+        <button class="btn" id="prev" disabled>Prev</button>
+        <button class="btn" id="next">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
